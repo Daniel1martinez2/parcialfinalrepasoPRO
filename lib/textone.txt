@@ -1,0 +1,6 @@
+Figura,tamX,tamY
+Círculo,50,30
+Cudrado,20,20
+Cuadrado,40,20
+Cuadrado,30,20
+Círculo,50,30
