@@ -38,6 +38,7 @@ public class Logic {
 				figuras.add(new Cuadrado((int)app.random(0,500),(int)app.random(0,500), 
 						Integer.parseInt(objeto[1]),
 						Integer.parseInt(objeto[2]),(int)app.random(0,0x7FFF0000), app)); 
+				
 			}else {
 				
 				figuras.add(new Circle((int)app.random(0,500),(int)app.random(0,500), 
@@ -80,8 +81,10 @@ public class Logic {
 		//a1.pintar();
 		for (Figure f : figuras) {
 			f.pintar();
+			
 			if(!stopall) {
-				f.mover();
+				//f.mover();
+				new Thread(f).start();
 			}
 			
 			

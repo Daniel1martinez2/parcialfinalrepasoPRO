@@ -9,6 +9,12 @@ public class Circle extends Figure {
 	}
 
 	public void run() {
+		try {
+			mover(); 
+			Thread.sleep(300);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 	}
 

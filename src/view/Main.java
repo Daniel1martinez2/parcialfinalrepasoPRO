@@ -39,7 +39,7 @@ public class Main extends PApplet{
 		control.addonemore(mouseX, mouseY);
 		if(mouseButton == RIGHT) {
 			control.setStopall(!control.isStopall());
-			stoped = true; 
+			stoped = !stoped; 
 		}
 	}
 	
